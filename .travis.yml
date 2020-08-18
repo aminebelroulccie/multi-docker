@@ -1,0 +1,20 @@
+sudo: required
+
+services:
+  - docker
+before_install:
+  - docker build -t aminebelroulccie/react-test -f ./client/Dockerfile.dev ./client
+script:
+  - docker run -e CI=true aminebelroulccie/react-test npm run test
+after_success:
+  - docker build -t aminebelroulccie/multi-client ./client
+  - docker build -t aminebelroulccie/multi-nginx ./nginx
+  - docker build -t aminebelroulccie/multi-server ./server
+  - docker build -t aminebelroulccie/multi-worker ./worker
+  # login to docker hub (travis does not support prompt)
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  # take this images and push them to docker hub
+  - docker push aminebelroulccie/multi-client
+  - docker push aminebelroulccie/multi-nginx
+  - docker push aminebelroulccie/multi-server
+  - docker push aminebelroulccie/multi-worker
