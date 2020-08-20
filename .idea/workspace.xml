@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4697da70-6aef-441f-9dbc-a476ecd93d7b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/nginx/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/Dockerfile" afterDir="false" />
-    </list>
+    <list default="true" id="4697da70-6aef-441f-9dbc-a476ecd93d7b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,12 +236,12 @@
       <workItem from="1597503713373" duration="1296000" />
       <workItem from="1597505045868" duration="34107000" />
       <workItem from="1597679396334" duration="13185000" />
-      <workItem from="1597765655781" duration="10209000" />
+      <workItem from="1597765655781" duration="10474000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77085000" />
+    <option name="totallyTimeSpent" value="77350000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
