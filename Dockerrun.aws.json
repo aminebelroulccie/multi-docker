@@ -30,7 +30,7 @@
       "postMappings": [
         {
           "hostPort": 80,
-          "containerPort": 8081
+          "containerPort": 80
         }
       ],
       "links": ["client","server"],
